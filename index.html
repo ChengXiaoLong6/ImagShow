@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 手机适配关键 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的静态页面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h2>欢迎来到我的页面</h2>
+    <!-- 图片 -->
+    <img src="images/bg.jpg" alt="展示图">
+
+    <!-- 背景音乐，浏览器要求：必须用户点击后才能播放 -->
+    <audio id="bgm" loop>
+        <source src="audio/bgm.mp3" type="audio/mpeg">
+
+        <button onclick="document.getElementById('bgm').play()">点击播放音乐</button>
+
+        <script>
+// 浏览器策略：禁止自动播放音频，必须用户交互触发
+        </script>
+</body>
+</html>
